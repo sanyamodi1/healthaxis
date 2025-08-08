@@ -1,28 +1,3 @@
-/*
-  Warnings:
-
-  - You are about to drop the column `dob` on the `Patient` table. All the data in the column will be lost.
-  - You are about to drop the column `firstName` on the `Patient` table. All the data in the column will be lost.
-  - You are about to drop the column `insurance_id` on the `Patient` table. All the data in the column will be lost.
-  - You are about to drop the column `insurance_name` on the `Patient` table. All the data in the column will be lost.
-  - You are about to drop the column `lastName` on the `Patient` table. All the data in the column will be lost.
-  - You are about to drop the column `phone_number` on the `Patient` table. All the data in the column will be lost.
-  - You are about to drop the `User` table. If the table is not empty, all the data it contains will be lost.
-  - A unique constraint covering the columns `[email]` on the table `Patient` will be added. If there are existing duplicate values, this will fail.
-  - Added the required column `date_of_birth` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `emergency_contact_name` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `emergency_contact_number` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `first_name` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `last_name` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `marital_status` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `medical_consent` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `phone` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `privacy_consent` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `relation` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `service_consent` to the `Patient` table without a default value. This is not possible if the table is not empty.
-  - Added the required column `updated_at` to the `Patient` table without a default value. This is not possible if the table is not empty.
-
-*/
 -- CreateEnum
 CREATE TYPE "Role" AS ENUM ('ADMIN', 'NURSE', 'DOCTOR', 'LAB_TECHNICIAN', 'PATIENT', 'CASHIER');
 
